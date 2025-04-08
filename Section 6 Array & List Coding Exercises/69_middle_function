@@ -1,0 +1,19 @@
+# Middle Function
+# Write a function called middle that takes a list and returns a new list that contains all but the first and last elements.
+
+# myList = [1, 2, 3, 4]
+# middle(myList)  # [2,3]
+
+def middle(lst):
+    start = 0
+    end = len(lst) - 1
+    
+    newList = []
+    
+    for i in range(len(lst)):
+        if i == start or i == end:
+            continue
+        else:
+            newList.append(lst[i])
+            
+    return newList
