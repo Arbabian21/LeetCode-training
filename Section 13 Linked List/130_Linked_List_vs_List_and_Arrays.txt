@@ -1,0 +1,4 @@
+In python lists you have indexes but linked lists do not. This allows python list to be accessed 
+very efficiently O(1) however you have to traverse elements in linked lists to get to the one you want. 
+
+Python lists are contiguous in memory and linked lists are not. they can be stored anywhere.

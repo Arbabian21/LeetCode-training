@@ -1,0 +1,28 @@
+Single liked lists: each node has two parts, value and next nodes memory location.
+allows us to add and remove nodes easily
+
+Circular singly linked list: Holds all the same properties as the singly linked lists however the tail points to
+the start of the linked list.
+    you have a head node that points to the start of the circular linked list and a tail node that points to
+    the end of the circular linked lists. This is so that you can quickly add and remove nodes. This is normal
+    for linked lists. The differentiator is that the final node (the one that the tail node points to - remmeber
+    the tail node is only for accessing the final node) points to the first node.
+    This allows you to go back to the very beginning of the linked list and start again whcih is NOT possible
+    with a regular singly linked list.
+
+    example: you have 4 players that each take a turn to put a card down and then you go again with player one. 
+    This would not be possible with a singly linked lsit because once you get to the final player it points to
+    null. Thsi is where a circular singly linked lsit comes into play. The final player points to the first 
+    player.
+
+Doubly Linked List: Very similar to singly linked list however each node has 3 parts. The data, the previous
+noodes memory locaiton, and the next nodes memory location. You still have the singly linked list properties 
+(REMEMBER this is onyl a double linked list. not a circualr doubly linked lsit.) so you have a head node that
+points to the first node and a tail node that points to the last node for ease of access. then the actual list
+has nodes w data, prev nodes memory add, next nodes memory add. With the first node having null for previous node
+memory location, and the final node having null for the next nodes memory locaiton.
+    this is important because singly linked lists are only one direction, you cannot go backwards. a circular
+    singly linked list allows you to start back at the beginning after the end however you still can only go in
+    one directoin. double linked lists allow you to go booth forwards and backwards.
+
+    example of doubly linked lists appliation: a music player where you have to be able to go back and forward.

@@ -1,0 +1,19 @@
+Linked List is a form of sequential colelciton and it does not have to be in order (in memory). 
+A linked list is made of independent nodes that may contain any type of data and each node has a 
+reference to the next node in the link.
+
+kind of like a train where each car is a node and the cars are connected with links. 
+They also both have heads and tails.
+You must traverse all nodes/train-cars to get to the end.
+Each node has two parts, data and links to the next node. i.e. passengers and links to the next car.
+
+Nodes of linked list are NOT contiguous in memory. 
+
+Every linked list has a head node that then points to the first node. the purpose is litterally just 
+to be a starting point.
+
+Each node has the data it stores and the memory location of the next node.
+
+Each tail has the data it stores and points to the null memory location.
+The reason you have access to tail, you are able to very quickly add new nodes to the end of the list. Otherwise
+would have to go through every node in the linked list to add one to the end which is O(n)
