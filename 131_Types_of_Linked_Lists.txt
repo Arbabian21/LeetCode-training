@@ -26,3 +26,12 @@ memory location, and the final node having null for the next nodes memory locait
     one directoin. double linked lists allow you to go booth forwards and backwards.
 
     example of doubly linked lists appliation: a music player where you have to be able to go back and forward.
+
+Circular doubly linked list: similar to doubly linked list and circular linked list. there's a head node that
+points to the start of the circualr doubly linked list and a tail node that points to the end of it. Then each 
+node has 3 parts. the data, the previous nodes memory location, the next nodes memory locaiton. now how this 
+is unique is that the first nodes previous nodes memoory location points to the final node rather than null. and
+the final nodes next nodes memory location points to the first node.
+    example: control tab and control shift tab in chrome. contol tab allows you to go to the next tab and ocne you
+    go to the final tab and hit shift tab it goes to the first node. when doing shift tab and you're at the first
+    tab and hit shift tab, you are now at the final tab. 
