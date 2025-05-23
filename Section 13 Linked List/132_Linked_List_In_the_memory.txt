@@ -1,0 +1,6 @@
+arrays are contiguous in memory meaning right next to each other.
+
+Linked list are anywhere in memory because each node stores the location of the next node.
+
+This allows us to add as many nodes to a linked list as we want because we just make the final node in the linked 
+list (current tail) point to your new node and make the new final node your tail. 
