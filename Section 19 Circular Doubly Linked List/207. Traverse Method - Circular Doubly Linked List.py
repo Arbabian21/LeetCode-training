@@ -68,6 +68,13 @@ class CDLinkedList:
             
         self.length += 1
 
+    def traverse(self): # time complex O(n)
+        curr = self.head
+        while curr:
+            print(curr)
+            curr = curr.next
+            if curr == self.head:
+                break
 
 cdll = CDLinkedList()
 emptycdll = CDLinkedList()

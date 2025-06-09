@@ -68,7 +68,44 @@ class CDLinkedList:
             
         self.length += 1
 
-
+    def traverse(self): # time complex O(n)
+        curr = self.head
+        while curr:
+            print(curr)
+            curr = curr.next
+            if curr == self.head:
+                break
+            
+    def reverseTraverse(self): # time complex O(n)
+        curr = self.tail
+        while curr:
+            print(curr)
+            curr = curr.prev
+            if curr == self.tail:
+                break
+    
+    def search(self, targetVal): # time complex O(n)
+        left = self.head
+        right = self.tail
+        
+        while left or right:
+            if left.value == targetVal:
+                return True
+            elif right.value == targetVal:
+                return True
+            if left == right:
+                break
+            left = left.next
+            right = right.next
+            
+            if left == self.head:
+                break
+            if right == self.tail:
+                break
+            
+        return False
+    
+    
 cdll = CDLinkedList()
 emptycdll = CDLinkedList()
 cdll.append(10)
@@ -83,3 +120,5 @@ print(cdll)
 
 # emptycdll.prepend(0)
 # print(emptycdll)
+
+print(cdll.search(-1))
