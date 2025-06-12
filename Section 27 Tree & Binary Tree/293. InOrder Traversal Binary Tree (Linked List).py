@@ -18,21 +18,13 @@ def inOrderTraversal(root): # time complex O(n) space complex O(n)
     print(root.data)
     inOrderTraversal(root.leftChild)
     
-def postOrderTraversal(root):  # time complex O(n) space complex O(n)
-    if not root:
-        return
-    postOrderTraversal(root.rightChild)
-    print(root.data)
-    postOrderTraversal(root.leftChild)
-    
+
 drinkBT = TreeNode("Drinks")
-hot = TreeNode("Hot")
-cold = TreeNode("Cold")
+hot = TreeNode("hot")
+cold = TreeNode("cold")
 drinkBT.leftChild = hot
 drinkBT.rightChild = cold
 
 preOrderTraversal(drinkBT)
 print("\n")
 inOrderTraversal(drinkBT)
-print("\n")
-postOrderTraversal(drinkBT)
