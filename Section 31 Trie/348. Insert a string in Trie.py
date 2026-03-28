@@ -16,7 +16,7 @@ class Trie:
                 node = TrieNode()
                 current.children.update({char: node})
             current = node
-        current.endOfString = True
+        current.endOfString = True 
 
 newTrie = Trie()
 newTrie.insert("App")
